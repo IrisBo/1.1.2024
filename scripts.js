@@ -1,5 +1,5 @@
 // connections
-
+//Amazing.
 const itemName = document.querySelector(".item_name")
 const itemPrice = document.querySelector(".item_price")
 const itemCategory = document.querySelector(".item_category")
@@ -8,9 +8,9 @@ const btnAddItem = document.querySelector("#Btn_add_item")
 const tableAllItems = document.querySelector(".item_atribut")
 // const tableHeaderConst= document.querySelector(".table_head-category")
 
-
+//you added local storage??
 let allAddedItems = getItemsFromLocalStorage()
-
+//amazing!
 window.addEventListener('load', function () {
     getTableFromLocalStorage();
 });
@@ -28,29 +28,23 @@ btnAddItem.addEventListener("click", function () {
         picture: itemPictureText,
 
     }
-
+    // is it item? or items?
     createHtmlItems(newItemAll)
 
-
+    
     allAddedItems.push(newItemAll)
-
+    
     keepItemsInLocalStorage(allAddedItems)
-
+    //function?
     itemName.value = ""
     itemPrice.value = ""
     itemCategory.value = ""
     itemPicture.value = " "
 
 })
-
-
-
-
-
-
-
+//Good comment
 // creating new item in html
-
+// this is amazing.
 function createHtmlItems(item) {
     const newItem = document.createElement("tr");
     for (const key in item) {
@@ -73,8 +67,6 @@ function createHtmlItems(item) {
     const element = document.getElementById("table_items");
     element.appendChild(newItem);
 }
-
-
 
 // to keep it in local storage
 
