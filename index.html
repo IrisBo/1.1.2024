@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 class="titletext">Add Product</h1>
+    <div id="box_contain">
+
+        <label>New Item</label><input type="text" class="item_name" placeholder="Enter item">
+        <label>Add Price</label><input type="number" class="item_price" placeholder="Enter price">
+        <br>
+        <!-- change this later -->
+        <label>Select Category</label>
+        <select name="category" class="item_category">
+            <option value="" disabled selected>Choose category</option>
+            <option value="Drinks">Drinks</option>
+            <option value="meat">Meat</option>
+            <option value="dairy">Dairy</option>
+            <option value="snacks">Snacks</option>
+            <option value="basic">Basic</option>
+        </select>
+        <br>
+        <label class="item_pics">Enter picture link</label>
+        <input type="url" class="item_pic">
+        <div>
+            <button type="submit" id="Btn_add_item">Add Item</button>
+        </div>
+
+    </div>
+    <hr>
+
+    <div>
+        <h2>My Cart</h2>
+        <table id="table_items">
+            <thead class="table_head-category">
+                <tr class="dont_touch_it">
+                    <th>Product Name</th>
+                    <th>Price</th>
+                    <th>Category</th>
+                    <th>Image</th>
+                </tr>
+            </thead>
+            <tbody class="item_atribut">
+
+            </tbody>
+
+        </table>
+    </div>
+
+
+
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>

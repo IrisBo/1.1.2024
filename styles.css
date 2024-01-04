@@ -1,0 +1,79 @@
+.titletext {
+    text-align: center;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url('https://t4.ftcdn.net/jpg/00/79/35/09/360_F_79350941_zTINovtyThszf0nvP5o3vHHMe4TGJ5C8.jpg');
+    background-size: cover;
+    margin: 45px;
+    padding-left: 140px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#box_contain {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+
+}
+
+
+
+
+#Btn_add_item {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    background-color: whitesmoke;
+    color: #333;
+    border: 2px solid #333;
+    border-radius: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+#Btn_add_item:hover {
+    background-color: #81f77dab;
+    color: #000000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+input,
+.item_category {
+    height: 25px;
+    margin: 10px;
+}
+
+
+#table_items {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+
+}
+
+.table_head-category th,
+.item_atribut td {
+    border-bottom: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+.table_head-category th {
+    background-color: transparent;
+
+}
+
+.item_atribut tr:nth-child(even) {
+    background-color: transparent;
+}
